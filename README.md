@@ -19,7 +19,9 @@ The repository follows a strict folder structure, with all folders and file name
         │       ├── black
         │       ├── white
         │       ├── full-color
-        │       └── inverse
+        │       ├── poster
+        │       ├── another-variant
+        │       └── ...
         ├── logo-mark
         │   ├── digital
         │   │   ├── black
@@ -30,7 +32,7 @@ The repository follows a strict folder structure, with all folders and file name
         │       ├── black
         │       ├── white
         │       ├── full-color
-        │       └── inverse
+        │       └── ...
         └── word-mark
             ├── digital
             │   ├── black
@@ -41,7 +43,9 @@ The repository follows a strict folder structure, with all folders and file name
                 ├── black
                 ├── white
                 ├── full-color
-                └── inverse
+                ├── poster
+                ├── another-variant
+                └── ...
 ```
 
 ### Folder Descriptions
@@ -86,17 +90,18 @@ nullspace--<logo-type>--<foreground-color>--<background-color>--<size>.svg/png
 
 * **SVG:** Scalable Vector Graphics are provided for all logos in each variant folder, as they scale infinitely and are ideal for both digital and print usage.
 * **PNG:** PNGs are provided for various fixed sizes to ensure quick use without requiring resizing.
+* **WEBP:** WEBPs are optimised for use on the web. They should be available for all digital assets that can be used on the web.
+* **PDF:** PDFs can be used to store printable assets like posters. They exist next to PNG formats.
 
 ## Size Guidelines
 
-* **Digital assets:** The digital assets will be provided in various sizes that match common web usage:
-  * Small icon sizes (e.g., 48x48, 128x128) for favicons and app icons.
-  * Medium sizes (e.g., 512x512, 1024x512) for website headers, social media, etc.
+**Digital assets:** The digital assets will be provided in various sizes that match common web usage. All sizes should be powers of 2 (128, 256, 512, etc.). 1080x1080 is an exception to that rule. The size of images that are not square will be determined by the vertical height (e.g., 512x972). The list below is not exhaustive and more sizes should be available.
+* Icon sizes (48x48, 64x64, 128x128, 512x512, 1080x1080 ) for favicons and app icons.
+* Medium sizes (e.g., 256x772, 1080x3482) for website headers, social media, etc.
 
-
-* **Print assets:** These are designed for use in high-resolution print formats:
-  * A4 dimensions for large prints.
-  * 1080px height for tall formats, while the width will depend on the aspect ratio of the logo.
+**Print assets:** These are designed for use in high-resolution print formats. That also means that they should be exported with higher DPI and print-enabled color spaces (CYMK).
+* A4 dimensions for large prints. Both portrait and landscape.
+* 1080px height for tall formats, while the width will depend on the aspect ratio of the logo.
   
 ## How to Use
 1. **Selecting the Right Logo**
